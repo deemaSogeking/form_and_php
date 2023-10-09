@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Бронированние</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__menu">
+        <nav class="nav">
+          <img class="logo" src="images/logo.png" alt="logo" />
+          <ul class="nav__menu">
+            <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+          <a class="registration" href="">Войти / Регистрация</a>
+        </nav>
+      </div>
+    </header>
+    <main class="form">
+      <div class="form__inner">
+        <form class="form__menu" action="php/display.php" method="post">
+          <span class="name">ФИО</span>
+          <input class="form__item" type="text" name="postName" />
+          <span>Адрес</span>
+          <input class="form__item" type="text" name="postAddress" />
+          <span>Город</span>
+          <select class="form__item-scroll" name="postCity">
+            <option value="Москва">Москва</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Лондон">Лондон</option>
+            <option value="Сеул">Сеул</option>
+            <option value="Токио">Токио</option>
+          </select>
+          <div class="form__check">
+            <p>Дополнительные опции</p>
+
+            <label>
+              <input
+                class="form__check-btn"
+                type="checkbox"
+                name="add[]"
+                value="Обед"
+              />
+              <span>Обед</span></label
+            >
+            <label>
+              <input
+                class="form__check-btn"
+                type="checkbox"
+                name="add[]"
+                value="Спальное Место"
+              /><span>Спальное Место</span></label
+            >
+
+            <label>
+              <input
+                class="form__check-btn"
+                type="checkbox"
+                name="add[]"
+                value="Такси"
+              /><span>Такси</span></label
+            >
+          </div>
+          <button class="form__btn">Отправить</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__menu">
+        <img class="logo" src="images/logo.png" alt="logo" />
+        <div class="footer__links">
+          <a class="footer__link" href="#">Link</a>
+          <a class="footer__link" href="#">Link</a>
+          <a class="footer__link" href="#">Link</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

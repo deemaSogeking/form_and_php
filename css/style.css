@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #020202;
+}
+
+/* header */
+.header {
+  margin: 0 auto;
+  padding: 0 100px;
+  box-shadow: 0px 17px 38px -39px rgba(0, 0, 0, 24.25);
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 120px;
+}
+.nav__menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav__item {
+  padding-right: 35px;
+}
+.nav__link,
+.registration {
+  padding: 10px 20px;
+  transition: background-color 0.2s ease;
+}
+.nav__link:hover,
+.registration:hover {
+  background-color: #95ceff;
+}
+/* main */
+.form {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.form__inner {
+  max-width: 336px;
+}
+
+.form__menu {
+  display: block;
+  box-shadow: -1px 10px 25px rgba(0, 0, 0, 0.35);
+}
+.form__menu {
+  border-radius: 5px;
+  padding: 20px 20px;
+}
+.form__item {
+  width: 100%;
+  outline: none;
+  border: 1px solid #95ceff;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #5c5c5c;
+}
+.form__item {
+  display: block;
+  cursor: pointer;
+}
+.form__item-scroll {
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #95ceff;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+.form__btn {
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  padding: 5px 115px;
+  background-color: #95ceff;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.form__btn:hover {
+  background-color: #4692d4;
+  box-shadow: 0px 4px 20px 0px #2c6190;
+}
+.form__check-btn,
+label {
+  cursor: pointer;
+}
+
+.name {
+  text-transform: uppercase;
+}
+/* footer */
+.footer {
+  box-shadow: 1px -13px 13px -10px rgba(0, 0, 0, 0.23);
+  margin-top: 100px;
+}
+.footer__menu {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+.footer__links {
+  margin-left: 33%;
+}
+.footer__link {
+  padding-left: 10px;
+  transition: background-color 0.2s ease;
+  padding: 10px 20px;
+}
+
+.footer__link:hover {
+  background-color: #95ceff;
+}
